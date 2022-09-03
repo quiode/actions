@@ -1,0 +1,13 @@
+# Creates a new release on a new tag
+name: Linux Release on new Tag
+description: Automatically creates a new release when a new commit is pushed to the release branch
+
+on:
+  push:
+    tags:
+     - '*'
+    
+jobs:
+
+  build:
+    
